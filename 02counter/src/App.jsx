@@ -5,8 +5,8 @@ function App() {
   const [counter, setCounter] = useState(15);
 
   const increaseValue = () => {
-    if (counter < 20) setCounter(counter + 1);
-
+    setCounter(counter + 1);
+    setCounter((prev) => prev + 1);
   }
   const decreaseValue = () => {
     if (counter > 0) setCounter(counter - 1);
